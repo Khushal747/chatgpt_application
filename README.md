@@ -20,3 +20,4 @@ ChatGPT has released version 4.0, but it is not fully open. Currently, AI Chat u
 
 
 
+![chatGpt_gif](https://github.com/Khushal747/chatgpt_application/assets/105562767/0606360c-e3ee-4634-8916-75f93605bd91)
