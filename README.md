@@ -18,5 +18,5 @@ ChatGPT has released version 4.0, but it is not fully open. Currently, AI Chat u
 </div>
 
 <div align=left>
-<img src="assets/105562767/0606360c-e3ee-4634-8916-75f93605bd91.gif" alt="chatGpt_gif" width="33%" height="20%">
+<img src="[assets/105562767/0606360c-e3ee-4634-8916-75f93605bd91.gi](https://github.com/Khushal747/chatgpt_application/assets/105562767/0606360c-e3ee-4634-8916-75f93605bd91)f" alt="chatGpt_gif" width="33%" height="20%">
 </div>
