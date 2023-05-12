@@ -81,7 +81,7 @@ chat
 
   void syncStorage() {
     chatList = ChatGPT.storage.read(chatListKey) ?? [];
-    debugPrint('---syncStorage success---');
+    debugPrint('---syncStorage success--- $chatList');
     notifyListeners();
   }
 

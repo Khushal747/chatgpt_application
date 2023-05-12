@@ -102,16 +102,16 @@ class _SettingPageState extends State<SettingPage> with WidgetsBindingObserver {
             child: SingleChildScrollView(
               child: Column(
                 children: [
-                  renderItemWidget(
-                    'images/privacy_policy_icon.png',
-                    Colors.red,
-                    32,
-                    'Privacy Policy',
-                    () {
-                      final Uri url = Uri.parse('https://wewehao.github.io/Privacy/privacy.html');
-                      Utils.launchURL(url);
-                    },
-                  ),
+                  // renderItemWidget(
+                  //   'images/privacy_policy_icon.png',
+                  //   Colors.red,
+                  //   32,
+                  //   'Privacy Policy',
+                  //   () {
+                  //     final Uri url = Uri.parse('https://wewehao.github.io/Privacy/privacy.html');
+                  //     Utils.launchURL(url);
+                  //   },
+                  // ),
                   // renderItemWidget('images/share_icon.png', Colors.green, 26, 'Share App', () {
                   //   Share.share(
                   //     Platform.isAndroid
@@ -203,10 +203,10 @@ class _SettingPageState extends State<SettingPage> with WidgetsBindingObserver {
                   /// Empty storage
                   if (Config.isDebug)
                     renderItemWidget(
-                      'images/debug_icon.png',
-                      Colors.indigo,
+                      'images/close_icon.png',
+                      Colors.white,
                       22,
-                      'Debug: Clear Storage',
+                      'Clear History',
                       () {
                         ChatGPT.storage.erase();
                         final store = Provider.of<AIChatStore>(context, listen: false);

@@ -1,6 +1,8 @@
 import 'dart:async';
 import 'package:aichat/components/HideKeyboard.dart';
 import 'package:aichat/page/AppOpenPage.dart';
+import 'package:aichat/page/HomePage.dart';
+import 'package:aichat/page/loginPage.dart';
 import 'package:aichat/stores/AIChatStore.dart';
 import 'package:flutter/material.dart';
 import 'package:aichat/utils/Chatgpt.dart';
@@ -10,6 +12,10 @@ import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:provider/provider.dart';
 
 void main() async {
+
+WidgetsFlutterBinding.ensureInitialized();
+// await Firebase.initializeApp();
+
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
     statusBarColor: Colors.black,
   ));
@@ -36,7 +42,9 @@ class MyApp extends StatelessWidget {
           scaffoldBackgroundColor: Colors.white,
           brightness: Brightness.light,
         ),
+        // home: const HomePage(),
         home: const SplashPage(),
+
         builder: EasyLoading.init(),
       ),
     );

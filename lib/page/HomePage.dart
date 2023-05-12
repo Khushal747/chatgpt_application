@@ -12,6 +12,8 @@ import 'package:aichat/stores/AIChatStore.dart';
 import 'package:provider/provider.dart';
 import 'package:uuid/uuid.dart';
 
+import 'loginPage.dart';
+
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -111,6 +113,7 @@ class _HomePageState extends State<HomePage> {
             ),
           ],
         ),
+
         backgroundColor: Colors.white,
         elevation: 0.5,
         actions: [
@@ -125,7 +128,33 @@ class _HomePageState extends State<HomePage> {
             },
           ),
           const SizedBox(width: 8),
+          IconButton(
+              onPressed: (){
+            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>LoginPage()));
+          },
+              icon:const Icon(Icons.exit_to_app),
+              iconSize: 32,
+            color: const Color.fromRGBO(98, 98, 98, 1.0),
+
+
+          ),
+
+
         ],
+
+        // actions: [
+        //   const SizedBox(width: 6),
+        //   IconButton(
+        //     icon: const Icon(Icons.settings),
+        //     iconSize: 32,
+        //     color: const Color.fromRGBO(98, 98, 98, 1.0),
+        //     onPressed: () {
+        //       // ChatGPT.genImage('Robot avatar, cute');
+        //       Utils.jumpPage(context, const SettingPage());
+        //     },
+        //   ),
+        //   const SizedBox(width: 8),
+        // ],
       ),
       body: SafeArea(
         child: Column(
@@ -158,10 +187,12 @@ class _HomePageState extends State<HomePage> {
                                   ),
                                 ),
                                 Container(
-                                  padding: const EdgeInsets.fromLTRB(0, 0, 8, 0),
+                                  padding:
+                                      const EdgeInsets.fromLTRB(0, 0, 8, 0),
                                   height: 16,
                                   child: const Image(
-                                    image: AssetImage('images/arrow_icon.png'),
+                                    image:
+                                        AssetImage('images/arrow_icon.png'),
                                   ),
                                 ),
                               ],
