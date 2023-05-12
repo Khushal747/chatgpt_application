@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## ChatGPT Application with flutter
 
 ChatGPT has released version 4.0, but it is not fully open. Currently, AI Chat uses the `gpt-3.5-turbo` model.
@@ -96,3 +97,6 @@ signingConfigs {
      }
 }
 ```
+=======
+# chatgpt_application
+>>>>>>> 496271ceefcdd54a95edfbaf44b6f880a529581c
